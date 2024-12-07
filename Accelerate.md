@@ -3,7 +3,8 @@ created: 2024-12-07 04:49:40
 url: https://developer.apple.com/documentation/accelerate
 ---
 
-
+# Accelerate
+ 
 ## **1. Class Structure and Hierarchy**
 
 ### **a. Core Class Diagram**
