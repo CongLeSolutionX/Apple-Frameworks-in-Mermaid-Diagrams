@@ -189,14 +189,14 @@ cd Apple-Frameworks-in-Mermaid-Diagrams
 
 3. **Open the Diagrams**
 
-   Diagrams are available in the `diagrams` folder in `.md` (Mermaid) format. You can view them using any Mermaid-compatible editor or integrate them into your documentation.
+   Diagrams are available in `.md` (Mermaid) format. You can view them using any Mermaid-compatible editor or integrate them into your documentation.
 
 ## Usage
 
 ### Viewing Diagrams
 1. **Directly open each file in this repo**
    
-   When opening each `.md` file in this repo, you can see the live render diagrams on each note thanks to `Obsidian` and Java engine.
+   - You just need to simply open each `.md` file on this repo and GitHub will render the diagrams for you.
 
 2. **Install a Mermaid Viewer on your local machine**
 
@@ -224,16 +224,16 @@ graph TD
 ## Supported Frameworks
 
 The project currently includes diagrams for the following Apple frameworks:
-- [Metal](https://github.com/CongLeSolutionX/Apple-Frameworks-in-Mermaid-diagrams/blob/main/Metal.md)
+- [Metal](/Apple-frameworks/Metal.md)
 - **UIKit**
 - **Foundation**
-- **Core Data**
+- [Core Data](/Apple-frameworks/CoreData.md)
 - **SwiftUI**
 - **Combine**
 - **MapKit**
-- **AVFoundation**
+- [AVFoundation](/Apple-frameworks/AVFoundation.md)
 
-*Note: This list is continuously expanding. Contributions are welcome to add more frameworks.*
+*Note: This list is continuously expanding. Please check each folder in this repo for more frameworks. Contributions are welcome to add more frameworks.*
 
 ## Contributing
 
@@ -247,29 +247,29 @@ Contributions are what make the open-source community such an amazing place to l
 
 2. **Clone Your Fork**
 
-```bash
+```sh
 git clone https://github.com/yourusername/Apple-Frameworks-in-Mermaid-Diagrams.git
 ```
 
 3. **Create a New Branch**
 
-```bash
+```sh
 git checkout -b feature/YourFeatureName
 ```
 
 4. **Make Your Changes**
 
-   Add new diagrams or improve existing ones in the `diagrams` folder.
+   Add new diagrams or improve existing ones in each folder in this repo.
 
 5. **Commit Your Changes**
 
-```bash
+```sh
 git commit -m "Add [Framework Name] diagram"
 ```
 
 6. **Push to Your Fork**
 
-```bash
+```sh
 git push origin feature/YourFeatureName
 ```
 
@@ -281,7 +281,6 @@ git push origin feature/YourFeatureName
 
 - **Consistency**: Follow the existing diagram styles and conventions.
 - **Clarity**: Ensure diagrams are clear, accurate, and easy to understand.
-- **Documentation**: Update the `Supported Frameworks` section if adding new frameworks.
 - **Testing**: Verify diagrams render correctly in Mermaid viewers.
 
 ## Roadmap
