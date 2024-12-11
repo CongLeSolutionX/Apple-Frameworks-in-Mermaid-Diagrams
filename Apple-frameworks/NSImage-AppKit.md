@@ -725,7 +725,3 @@ graph LR
 ```
 
 ---
-
-By leveraging these diagrams, developers can gain a deeper understanding of the `NSImage` class and its role within the AppKit framework. This structured visualization aids in designing robust macOS applications, ensuring best practices are followed for optimal performance and maintainability.
-
----

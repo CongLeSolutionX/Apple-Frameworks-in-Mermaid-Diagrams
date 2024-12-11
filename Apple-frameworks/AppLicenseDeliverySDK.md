@@ -734,7 +734,3 @@ func testLicenseValidation() {
 
 ---
 
-By following this structured approach and adhering to best practices, you can effectively integrate and utilize the **`App License Delivery SDK`** within your iOS applications, ensuring robust license management, secure data handling, and a seamless user experience.
-
----
-
