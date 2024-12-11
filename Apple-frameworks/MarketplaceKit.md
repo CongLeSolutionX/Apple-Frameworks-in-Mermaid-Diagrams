@@ -7,8 +7,6 @@ license(s): MIT, CC BY 4.0
 ---
 
 
----
-
 # Marketplace Kit
 
 ## **1. Class Structure and Hierarchy**
