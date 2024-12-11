@@ -6,10 +6,6 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-
-
----
-
 # Core Animation
 
 
