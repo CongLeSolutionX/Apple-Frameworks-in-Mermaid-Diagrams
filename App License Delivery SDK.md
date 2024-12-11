@@ -1,6 +1,9 @@
 ---
 created: 2024-12-07 04:58:55
-url: https://developer.apple.com/documentation/AppLicenseDeliverySDK
+reference_url: https://developer.apple.com/documentation/AppLicenseDeliverySDK
+author(s): Cong Le
+version: "1.0"
+license(s): MIT, CC BY 4.0
 ---
 
 # App License Delivery SDK

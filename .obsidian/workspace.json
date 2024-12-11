@@ -4,43 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "64897c7ded145247",
+        "id": "7f1a58f7bf263df6",
         "type": "tabs",
-        "dimension": 39.56276445698166,
         "children": [
           {
-            "id": "861e6c72fb3c9bf7",
+            "id": "ab1969eba343de27",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Metal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
-            }
-          }
-        ]
-      },
-      {
-        "id": "82096d6b04320728",
-        "type": "tabs",
-        "dimension": 60.43723554301833,
-        "children": [
-          {
-            "id": "0ec747264a8cda12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README 1"
+              "title": "Metal"
             }
           }
         ]
@@ -112,18 +90,8 @@
             "state": {
               "type": "structured-tree-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "0062c497520857cf",
-            "type": "leaf",
-            "state": {
-              "type": "file-tree-view",
-              "state": {},
-              "icon": "sheets-in-box",
-              "title": "File Tree"
+              "icon": "structured-activity-bar",
+              "title": "Structured Tree"
             }
           }
         ],
@@ -140,7 +108,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "README 1.md",
+                "file": "Metal.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -168,7 +136,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of README 1"
+              "title": "Graph of Metal"
             }
           }
         ]
@@ -237,10 +205,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README 1.md"
+                "file": "Metal.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of README 1"
+              "title": "Outline of Metal"
             }
           }
         ],
@@ -248,8 +216,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422,
-    "collapsed": true
+    "width": 422
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -264,11 +231,22 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "0ec747264a8cda12",
+  "active": "52b09ca4f9727ba0",
   "lastOpenFiles": [
+    "//LICENSE-docs.txt",
     "README.md",
-    "README 1.md",
+    "Metal.md",
+    "Marketplace Kit.md",
+    "Core ML.md",
+    "Core Animation.md",
+    "App License Delivery SDK.md",
+    "App Intents.md",
+    "App Clips.md",
+    "Accessibility.md",
     "Accelerate.md",
+    "SwiftData.md",
+    "README.md",
+    "LICENSE-docs.txt",
     "Accessibility/Step 1 - Vision - By o1-mini.md",
     "Vision/Step 1 - Vision - By o1-mini.md",
     "Vision/Step 0 - Vision - My request.md",

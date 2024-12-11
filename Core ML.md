@@ -1,9 +1,14 @@
 ---
 created: 2024-12-07 03:31:00
+reference_url: https://developer.apple.com/documentation/coreml/
+author(s): Cong Le
+version: "1.0"
+license(s): MIT, CC BY 4.0
 ---
 
 
-# CoreML
+
+# Core ML
 
 
 ## **1. Class Structure and Hierarchy**
