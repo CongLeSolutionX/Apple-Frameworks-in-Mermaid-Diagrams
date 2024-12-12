@@ -89,10 +89,10 @@ flowchart TD
     AD -->| | AE[Final Rendered Output]
 
    %% Styling
-   style A fill:#f199,stroke:#543,stroke-width:2px
-   style B fill:#2f99,stroke:#543,stroke-width:2px
-   style C fill:#f199,stroke:#543,stroke-width:2px
-   style K fill:#2f99,stroke:#543,stroke-width:2px
+   style A fill:#f119,stroke:#543,stroke-width:2px
+   style B fill:#551f,stroke:#543,stroke-width:2px
+   style C fill:#f119,stroke:#543,stroke-width:2px
+   style K fill:#551f,stroke:#543,stroke-width:2px
    style X fill:#91f,stroke:#543,stroke-width:2px
    style AA fill:#91f,stroke:#543,stroke-width:2px
    style AD fill:#6f19,stroke:#543,stroke-width:2px
