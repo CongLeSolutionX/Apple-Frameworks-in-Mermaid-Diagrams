@@ -604,3 +604,5 @@ graph LR
 10. **Write Unit Tests**: Ensure the reliability of your data operations by writing comprehensive tests.
 
 By adhering to these best practices, you can effectively leverage the `SwiftData` framework to build robust, scalable, and high-performance iOS applications.
+
+---

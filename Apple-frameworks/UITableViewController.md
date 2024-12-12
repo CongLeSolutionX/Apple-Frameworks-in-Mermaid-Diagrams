@@ -240,7 +240,6 @@ flowchart TD
   - **Row Actions**: `UITableView.RowAction`
   - **Section Types**: `UITableView.Section`
 
-## TODO: Fix diagram syntax error 
 
 ```mermaid
 classDiagram
@@ -528,7 +527,6 @@ flowchart TD
   - **iOS Versions**: 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0
   - **Features Introduced**: Pull-to-Refresh, Self-Sizing Cells, Swipe Actions, Context Menus, Diffable Data Sources, UIRefreshControl enhancements, etc.
 
-## TODO: Fix diagram syntax error
 
 ```mermaid
 gantt
