@@ -235,6 +235,7 @@ flowchart TD
     AC -->|Writes to| AD["GPU: Render Target (MTLTexture)"]
     AD -->| | AE[Final Rendered Output]
 
+    %% Styling
     style A fill:#f199,stroke:#543,stroke-width:2px
     style B fill:#2f99,stroke:#543,stroke-width:2px
     style C fill:#f199,stroke:#543,stroke-width:2px
@@ -244,6 +245,14 @@ flowchart TD
     style AD fill:#6f19,stroke:#543,stroke-width:2px
     style AE fill:#21cf,stroke:#543,stroke-width:2px
 
+
+    %% Open corresponding official Apple documentations when a node receives a click from user
+    click A href "https://developer.apple.com/documentation/metal/mtldevice" "MTLDevice Documentation" _blank
+    
+    click B href "https://developer.apple.com/documentation/metal/mtlcommandqueue" "MTLCommandQueue Documentation" _blank
+    
+    click C href "https://developer.apple.com/documentation/metal/mtlcommandbuffer" "MTLCommandBuffer Documentation" _blank
+    
 ```
 
 **Explanation:**

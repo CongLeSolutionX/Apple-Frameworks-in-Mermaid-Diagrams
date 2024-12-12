@@ -11,12 +11,8 @@
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Features](#features)
-  - [Demo - Swift Concurrency in Mermaid Diagrams](#demo---swift-concurrency-in-mermaid-diagrams)
-    - [1. High-Level Overview of Swift Concurrency](#1-high-level-overview-of-swift-concurrency)
-    - [2. `async`/`await` and Actors](#2-asyncawait-and-actors)
-    - [3. Task Hierarchy and Structured Concurrency](#3-task-hierarchy-and-structured-concurrency)
-    - [4. Task Groups](#4-task-groups)
-    - [5. Error Handling and Cancellation](#5-error-handling-and-cancellation)
+  - [Demo](#demo)
+    - [Comprehensive Rendering Pipeline Integration of MTLCommandQueue including GPU Execution Stages](#comprehensive-rendering-pipeline-integration-of-mtlcommandqueue-including-gpu-execution-stages)
   - [Installation](#installation)
   - [Usage](#usage)
     - [Viewing Diagrams](#viewing-diagrams)
@@ -47,129 +43,73 @@ Mermaid is a popular JavaScript-based diagramming and charting tool that uses a 
 
 ---
 
-## Demo - Swift Concurrency in Mermaid Diagrams
+## Demo
+
+### Comprehensive Rendering Pipeline Integration of MTLCommandQueue including GPU Execution Stages
 
 
-*Note: For more details and explanations, please refer to the dedicated notes file on this topic. Below, we illustrate the concept of Swift Concurrency through a series of Mermaid diagrams.*
+*Note: For more details and explanations, please refer to the dedicated note file on this topic.*
 
+*Also, certain diagrams have interactive nodes (as the one below) which, when clicked, navigate to the official documentation for the respective keywords.*
 
+---
 
-### 1. High-Level Overview of Swift Concurrency
-
-This diagram provides a simplified view of how `async/await` integrates into a program's flow.
 
 ```mermaid
-graph TD
-    A[Main Thread] -->|Calls| B{"async function foo()"};
-    B -->|Awaits| C{ }
-    C -- async operation (e.g., network request) --> D[Background Thread/Pool of Threads]
-    B -->|Resumes after await| E;
-    E -->F{Continuation on Main Thread};
-    D --Result--> C;
-  
-classDef async fill:#f51,stroke:#333,stroke-width:2px;
-class B,C,D async;
+flowchart TD
+    A[MTLDevice] -->|Creates| B(MTLCommandQueue)
+    B -->|Creates| C[MTLCommandBuffer]
+    C -->|Encodes| D{MTLLibrary}
+    C -->|Encodes| E{MTLRenderPipelineState}
+    C -->|Encodes| F[MTLDepthStencilState]
+    C -->|Encodes| G["Vertex Buffers (MTLBuffer)"]
+    C -->|Encodes| H["Fragment Buffers (MTLBuffer)"]
+    C -->|Encodes| I["Textures (MTLTexture)"]
+    C -->|Encodes| J["Samplers (MTLSamplerState)"]
+    C -->|Creates| K[MTLRenderCommandEncoder]
+    K -->|Sets| L[setViewport]
+    K -->|Sets| M[setRenderPipelineState]
+    K -->|Sets| N[setDepthStencilState]
+    K -->|Sets| O[setVertexBuffer]
+    K -->|Sets| P[setFragmentBuffer]
+    K -->|Sets| Q[setVertexTexture]
+    K -->|Sets| R[setFragmentTexture]
+    K -->|Sets| S[setVertexSamplerState]
+    K -->|Sets| T[setFragmentSamplerState]
+    K -->|Draws| U[drawPrimitives/drawIndexedPrimitives]
+    K -->|Ends Encoding| V[endEncoding]
+    C -->|Commits| W[commit]
+    W -->|Executes| X[GPU: Vertex Shader]
+    X -->| | Y[GPU: Primitive Assembly]
+    Y -->| | Z[GPU: Rasterization]
+    Z -->| | AA[GPU: Fragment Shader]
+    AA -->| | AB[GPU: Depth/Stencil Test]
+    AB -->| | AC[GPU: Blending]
+    AC -->|Writes to| AD["GPU: Render Target (MTLTexture)"]
+    AD -->| | AE[Final Rendered Output]
 
-```
+   %% Styling
+   style A fill:#f199,stroke:#543,stroke-width:2px
+   style B fill:#2f99,stroke:#543,stroke-width:2px
+   style C fill:#f199,stroke:#543,stroke-width:2px
+   style K fill:#2f99,stroke:#543,stroke-width:2px
+   style X fill:#91f,stroke:#543,stroke-width:2px
+   style AA fill:#91f,stroke:#543,stroke-width:2px
+   style AD fill:#6f19,stroke:#543,stroke-width:2px
+   style AE fill:#21cf,stroke:#543,stroke-width:2px
 
 
-### 2. `async`/`await` and Actors
-
-This diagram shows how `async/await` interacts with actors, a core component of Swift's concurrency for data isolation.
-
-```mermaid
-graph TD
-    A[Main Thread] -->|Calls| B{async function};
-    B -->|Awaits Task| D;
-    D -->|Performs operations on| E[Actor];
-    E --"isolated state updates"--> E;
-    B -->|Resumes execution| F[Continuation];
-    D --"Operation Result"-->B
+   %% Open corresponding official Apple documentations when a node receives a click from user
+   click A href "https://developer.apple.com/documentation/metal/mtldevice" "MTLDevice Documentation" _blank
     
-   subgraph "Actor"
-      E
-   end
-
-classDef async fill:#19f,stroke:#333,stroke-width:2px;
-class B,D async;
-
-classDef actors fill:#4f95,stroke:#333,stroke-width:2px;
-class E actors
-
-```
-
-### 3. Task Hierarchy and Structured Concurrency
-
-This diagram illustrates how tasks are organized hierarchically, demonstrating structured concurrency, one of the main pillars that are important to understand the inner workings of Swift Concurrency.
-
-```mermaid
-graph TD
-    A[Main Task] -->|Spawns| B(Child Task 1);
-    A -->|Spawns| C(Child Task 2);
-    A -->|Spawns| D(async let Child Task 3);
-    B -->|May spawn| E(Sub-Child Task);
-    C -->|Awaits| F(Result/throws);
-    A -->|Implicitly awaits all children| G[End of Main Task];  
+   click B href "https://developer.apple.com/documentation/metal/mtlcommandqueue" "MTLCommandQueue Documentation" _blank
     
-    
-classDef task fill:#2f19,stroke:#333,stroke-width:2px;
-class A,B,C,D,E task
-
-classDef error fill:#418,stroke:#333,stroke-width:2px;
-class F error
-
-```
-
-
-### 4. Task Groups
-
-This diagram illustrates how `withTaskGroup` can manage a dynamic number of child tasks.
-
-```mermaid
-graph TD
-    A[Main Task] -->|Creates| B[Task Group];
-    B --"Defined by"-->  C[withTaskGroup];
-    B -->|Adds Child Task| D{Child Task 1};
-    B -->|Adds Child Task| E{Child Task 2};
-    B -->|Adds ...| F{Child Task N};
-    B -->|Awaits Task Completion| H[Results];
-    C -->|Manages| B;
-    
-    D --"Operation Result"--> H;
-    E --"Operation Result"--> H;
-    F --"Operation Result"--> H;
-
-classDef task fill:#35f9,stroke:#333,stroke-width:2px;
-class A,B,C,D,E,F task
-
-```
-
-### 5. Error Handling and Cancellation
-
-This diagram demonstrates how errors and cancellation propagate through the task hierarchy.
-
-```mermaid
-graph TD
-    A[Parent Task] -->|Spawns| B{Child Task 1};
-    A -->|Spawns| C{Child Task 2};
-    B -->|May throw| D[Error];
-    C -->|Checks for Cancellation| E{isCancelled?};
-    E --"Yes"--> F[Handle Cancellation];
-    D -->|Propagates to Parent| A;
-    A -->|Handles or rethrows| G[Error Handling/Rethrow];
-    E --"No"--> C;
-    
-classDef task fill:#c44,stroke:#333,stroke-width:2px;
-class A,B,C,E,F task
-
-classDef error fill:#c2c9,stroke:#333,stroke-width:2px;
-class D,G error
+   click C href "https://developer.apple.com/documentation/metal/mtlcommandbuffer" "MTLCommandBuffer Documentation" _blank
 
 ```
 
 
 ---
-
 
 ## Installation
 
