@@ -2,7 +2,7 @@
 created: 2024-12-07 04:58:55
 url:
 author(s): Cong Le
-version: "1.0"
+version: "1.2"
 license(s): MIT, CC BY 4.0
 ---
 
@@ -57,6 +57,192 @@ classDiagram
     CIImage --> CIFormat
     CIImage --> CISamplerType
 ```
+
+---
+
+
+### CIImage Class Overview
+
+```mermaid
+classDiagram
+    class CIImage {
+        + CGRect extent
+        + Bool isOpaque
+        + Dictionary<String, Any> properties
+        + URL? url
+        + CGColorSpace? colorSpace
+        + Float contentHeadroom
+        + CVPixelBuffer? pixelBuffer
+        + CGImage? cgImage
+        + MTLTexture? metalTexture
+        + AVDepthData? depthData
+        + AVPortraitEffectsMatte? portraitEffectsMatte
+        + AVSemanticSegmentationMatte? semanticSegmentationMatte
+
+        + class func empty() CIImage
+        + class var black: CIImage
+        + class var white: CIImage
+        + class var gray: CIImage
+        + class var red: CIImage
+        + class var green: CIImage
+        + class var blue: CIImage
+        + class var cyan: CIImage
+        + class var magenta: CIImage
+        + class var yellow: CIImage
+        + class var clear: CIImage
+
+        + init(cgImage: CGImage)
+        + init(cgImage: CGImage, options: [CIImageOption: Any]?)
+        + init(cgImageSource: CGImageSource, index: Int, options: [CIImageOption: Any]?)
+        + init(data: Data)
+        + init(data: Data, options: [CIImageOption: Any]?)
+        + init(bitmapData: Data, bytesPerRow: Int, size: CGSize, format: CIFormat, colorSpace: CGColorSpace?)
+        + init(ioSurface: IOSurfaceRef)
+        + init(ioSurface: IOSurfaceRef, options: [CIImageOption: Any]?)
+        + init(cvImageBuffer: CVImageBuffer)
+        + init(cvImageBuffer: CVImageBuffer, options: [CIImageOption: Any]?)
+        + init(cvPixelBuffer: CVPixelBuffer)
+        + init(cvPixelBuffer: CVPixelBuffer, options: [CIImageOption: Any]?)
+        + init(color: CIColor)
+        + init(depthData: AVDepthData)
+        + init(depthData: AVDepthData, options: [String: Any]?)
+        + init(portraitEffectsMatte: AVPortraitEffectsMatte)
+        + init(portraitEffectsMatte: AVPortraitEffectsMatte, options: [CIImageOption: Any]?)
+        + init(semanticSegmentationMatte: AVSemanticSegmentationMatte)
+        + init(semanticSegmentationMatte: AVSemanticSegmentationMatte, options: [CIImageOption: Any]?)
+
+        + func transformed(by: CGAffineTransform) CIImage
+        + func transformed(by: CGAffineTransform, highQualityDownsample: Bool) CIImage
+        + func oriented(forExifOrientation: Int32) CIImage
+        + func orientationTransform(forExifOrientation: Int32) CGAffineTransform
+        + func oriented(_: CGImagePropertyOrientation) CIImage
+        + func orientationTransform(for: CGImagePropertyOrientation) CGAffineTransform
+        + func composited(over: CIImage) CIImage
+        + func cropped(to: CGRect) CIImage
+        + func clampedToExtent() CIImage
+        + func clamped(to: CGRect) CIImage
+        + func applyingFilter(_: String, parameters: [String: Any]) CIImage
+        + func applyingFilter(_: String) CIImage
+        + func matchedToWorkingSpace(from: CGColorSpace) CIImage?
+        + func matchedFromWorkingSpace(to: CGColorSpace) CIImage?
+        + func premultiplyingAlpha() CIImage
+        + func unpremultiplyingAlpha() CIImage
+        + func settingAlphaOne(in: CGRect) CIImage
+        + func applyingGaussianBlur(sigma: Double) CIImage
+        + func settingProperties(_: [AnyHashable: Any]) CIImage
+        + func samplingLinear() CIImage
+        + func samplingNearest() CIImage
+        + func insertingIntermediate() CIImage
+        + func insertingIntermediate(cache: Bool) CIImage
+        + func applyingGainMap(_: CIImage) CIImage
+        + func applyingGainMap(_: CIImage, headroom: Float) CIImage
+        + func autoAdjustmentFilters() [CIFilter]
+        + func autoAdjustmentFilters(options: [CIImageAutoAdjustmentOption: Any]?) [CIFilter]
+        + func convertingWorkingSpaceToLab() CIImage
+        + func convertingLabToWorkingSpace() CIImage
+        + func regionOfInterest(for: CIImage, in: CGRect) CGRect
+    }
+
+    CIImage o-- CIFormat
+    CIImage o-- CIImageOption
+    CIImage o-- CIImageAutoAdjustmentOption
+    CIImage ..|> NSSecureCoding
+    CIImage ..|> NSCopying
+```
+
+---
+
+
+### CIFormat Enumeration
+
+```mermaid
+classDiagram
+    class CIFormat {
+        <<Enumeration>>
+        + init(rawValue: Int32)
+
+        + static var ARGB8: CIFormat
+        + static var BGRA8: CIFormat
+        + static var RGBA8: CIFormat
+        + static var ABGR8: CIFormat
+        + static var RGBAh: CIFormat
+        + static var RGBA16: CIFormat
+        + static var RGBAf: CIFormat
+        + static var RGBX16: CIFormat
+        + static var rgbXh: CIFormat
+        + static var rgbXf: CIFormat
+        + static var RGB10: CIFormat
+        + static var A8: CIFormat
+        + static var A16: CIFormat
+        + static var Ah: CIFormat
+        + static var Af: CIFormat
+        + static var R8: CIFormat
+        + static var R16: CIFormat
+        + static var Rh: CIFormat
+        + static var Rf: CIFormat
+        + static var RG8: CIFormat
+        + static var RG16: CIFormat
+        + static var RGh: CIFormat
+        + static var RGf: CIFormat
+        + static var L8: CIFormat
+        + static var L16: CIFormat
+        + static var Lh: CIFormat
+        + static var Lf: CIFormat
+        + static var LA8: CIFormat
+        + static var LA16: CIFormat
+        + static var LAh: CIFormat
+        + static var LAf: CIFormat
+    }
+```
+
+---
+
+### CIImageOption Enumeration
+
+```mermaid
+classDiagram
+    class CIImageOption {
+        <<Enumeration>>
+        + init(rawValue: String)
+
+        + static let colorSpace: CIImageOption
+        + static let toneMapHDRtoSDR: CIImageOption
+        + static let expandToHDR: CIImageOption
+        + static let contentHeadroom: CIImageOption
+        + static let nearestSampling: CIImageOption
+        + static let cacheImmediately: CIImageOption
+        + static let properties: CIImageOption
+        + static let applyOrientationProperty: CIImageOption
+        + static let auxiliaryDepth: CIImageOption
+        + static let auxiliaryDisparity: CIImageOption
+        + static let auxiliaryPortraitEffectsMatte: CIImageOption
+        + static let auxiliarySemanticSegmentationSkinMatte: CIImageOption
+        + static let auxiliarySemanticSegmentationHairMatte: CIImageOption
+        + static let auxiliarySemanticSegmentationTeethMatte: CIImageOption
+        + static let auxiliarySemanticSegmentationGlassesMatte: CIImageOption
+        + static let auxiliarySemanticSegmentationSkyMatte: CIImageOption
+        + static let auxiliaryHDRGainMap: CIImageOption
+    }
+```
+
+---
+
+### CIImageAutoAdjustmentOption Enumeration
+
+```mermaid
+classDiagram
+    class CIImageAutoAdjustmentOption {
+        <<Enumeration>>
+        + init(rawValue: String)
+
+        + static let enhance: CIImageAutoAdjustmentOption
+        + static let redEye: CIImageAutoAdjustmentOption
+        + static let features: CIImageAutoAdjustmentOption
+        + static let crop: CIImageAutoAdjustmentOption
+        + static let level: CIImageAutoAdjustmentOption
+    }
+```
+
 
 ---
 
