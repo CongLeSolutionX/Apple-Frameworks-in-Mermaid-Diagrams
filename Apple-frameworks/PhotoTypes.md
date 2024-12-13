@@ -87,14 +87,40 @@ classDiagram
         +smartFolderEvents = 200
         +smartFolderFaces = 201
         +any = 9223372036854775807
+        
         % Deprecated Cases
-        +momentListCluster is deprecated in iOS 13
-        +momentListYear is deprecated in iOS 13
+        +momentListCluster~deprecated in iOS 13~
+        +momentListYear~deprecated in iOS 13~
     }
 ```
 
 **Description:**
 Further categorizes collection lists with specific subtypes, including deprecated moment list types and various folder types.
+
+
+## PHCollectionListType and PHCollectionListSubtype Enumerations
+
+```mermaid
+classDiagram
+    class PHCollectionListType {
+        <<Enumeration>>
+        + momentList~deprecated~
+        + folder
+        + smartFolder
+    }
+
+    class PHCollectionListSubtype {
+        <<Enumeration>>
+        + momentListCluster~deprecated~
+        + momentListYear~deprecated~
+        + regularFolder
+        + smartFolderEvents
+        + smartFolderFaces
+        + any
+    }
+
+    PHCollectionListType --> PHCollectionListSubtype : specifies
+```
 
 ---
 
@@ -178,6 +204,64 @@ classDiagram
 
 **Description:**
 Provides detailed subtypes for asset collections, including various album types and smart album categories, with support for modern features like Live Photos and Cinematic.
+
+
+## PHAssetCollectionType and PHAssetCollectionSubtype Enumerations
+
+```mermaid
+classDiagram
+    class PHAssetCollectionType {
+        <<Enumeration>>
+        + album
+        + smartAlbum
+        + moment~deprecated~
+    }
+
+    class PHAssetCollectionSubtype {
+        <<Enumeration>>
+        // Albums
+        + albumRegular
+        + albumSyncedEvent
+        + albumSyncedFaces
+        + albumSyncedAlbum
+        + albumImported
+        + albumMyPhotoStream
+        + albumCloudShared
+
+        // Smart Albums
+        + smartAlbumGeneric
+        + smartAlbumPanoramas
+        + smartAlbumVideos
+        + smartAlbumFavorites
+        + smartAlbumTimelapses
+        + smartAlbumAllHidden
+        + smartAlbumRecentlyAdded
+        + smartAlbumBursts
+        + smartAlbumSlomoVideos
+        + smartAlbumUserLibrary
+        + smartAlbumSelfPortraits
+        + smartAlbumScreenshots
+        + smartAlbumDepthEffect
+        + smartAlbumLivePhotos
+        + smartAlbumAnimated
+        + smartAlbumLongExposures
+        + smartAlbumUnableToUpload
+        + smartAlbumRAW
+        + smartAlbumCinematic
+        + smartAlbumSpatial
+        + any
+    }
+
+    PHAssetCollectionType --> PHAssetCollectionSubtype : further specifies
+```
+
+
+**Description:**
+
+- **PHAssetCollectionType** defines the types of asset collections (e.g., album, smart album).
+- **PHAssetCollectionSubtype** provides detailed subtypes, categorized into Albums and Smart Albums.
+- Deprecated items are marked with `~deprecated~`.
+
 
 ---
 
@@ -432,4 +516,3 @@ classDiagram
 
 
 ---
-
