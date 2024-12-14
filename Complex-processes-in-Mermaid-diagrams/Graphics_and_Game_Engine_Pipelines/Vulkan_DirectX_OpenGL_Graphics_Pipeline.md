@@ -1,35 +1,16 @@
 ---
 created: 2024-12-07 04:58:55
-url: 
-author: Cong Le
+url:
+author(s): Cong Le
+version: "1.0"
+license(s): MIT, CC BY 4.0
 ---
 
 
+# Vulkan Graphics Pipeline
+Below is a set of Mermaid diagrams for Vulkan, DirectX, and OpenGL, focusing on their graphics pipelines.
 
-
-
----
-
-# My request 
-
-Creating a comprehensive and organized set of Mermaid diagrams for the `Vulkan/DirectX/OpenGL` in section `1. Graphics and Game Engine Pipelines`. Remove duplicated information and only retain unique details of the research theme topic.
-
-You have to carefully and semantically go through all the sets of mermaid diagrams and illustrations in the previous for reference to get a richer context and provide optimal responses.
-
-
-
-
----
-
-# Answer by Gemini-exp-1206
-
-Okay, I understand. I'll create a set of Mermaid diagrams for Vulkan, DirectX, and OpenGL, focusing on their graphics pipelines and drawing parallels to the Metal diagrams we've already discussed. I'll emphasize unique features and terminology while avoiding redundancy.
-
-Here are the Mermaid diagrams, categorized for each API:
-
-## Mermaid Diagrams for Graphics Pipelines
-
-### 1. Vulkan Graphics Pipeline
+## 1. Vulkan Graphics Pipeline
 
 ```mermaid
 graph TD
@@ -129,7 +110,7 @@ graph TD
 *   **VkDescriptorSet:**  Binds resources (buffers, images) to specific shader stages.
 *   **VkSwapchainKHR:**  Manages a chain of presentation images.
 
-### 2. DirectX 12 Graphics Pipeline
+## 2. DirectX 12 Graphics Pipeline
 
 ```mermaid
 graph TD
@@ -232,7 +213,7 @@ graph TD
 *   **IDXGISwapChain:** Manages the presentation of rendered images.
 *   **Resource Barriers:** Used to transition resource states (e.g., render target to shader read).
 
-### 3. OpenGL Graphics Pipeline
+## 3. OpenGL Graphics Pipeline
 
 ```mermaid
 graph TD
@@ -314,5 +295,3 @@ graph TD
 These diagrams provide a comprehensive overview of the Vulkan, DirectX 12, and OpenGL graphics pipelines, highlighting their unique features and terminology while implicitly drawing comparisons to the Metal pipeline discussed earlier. I've avoided redundancy by focusing on the distinct aspects of each API. Remember that these are simplified representations, but they capture the essential concepts and workflows.
 
 ---
-
-

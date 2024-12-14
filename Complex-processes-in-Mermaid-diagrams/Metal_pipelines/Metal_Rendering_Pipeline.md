@@ -1,37 +1,15 @@
 ---
 created: 2024-12-07 04:58:55
-url: 
-author: Cong Le
+url:
+author(s): Cong Le
+version: "1.0"
+license(s): MIT, CC BY 4.0
 ---
 
 
-
-
-
----
-
-# My request 
-
-
-Creating a comprehensive and organized set of Mermaid diagrams for the `Metal's Rendering Pipeline` in section `1. Graphics and Game Engine Pipelines`. Make sure to remove any duplicated information and only retain unique information of the research theme topic.
-
-You have to carefully and semantically go through all the sets of mermaid diagrams and illustrations in the previous for reference to get a more richer context to provided the optimal responses.
-
-
-
-
----
-
-# Answer by Gemini-exp-1206
-
-
-Okay, I've thoroughly reviewed the previous responses and extracted the unique, essential information to create a consolidated set of Mermaid diagrams focused on **Metal's Rendering Pipeline**, eliminating redundancies.
-
-Here's the optimized set of diagrams, designed to be comprehensive and organized:
-
-## Optimized Mermaid Diagrams for Metal's Rendering Pipeline
-
-### 1. Metal Rendering Pipeline: High-Level Overview
+# Metal's Rendering Pipeline
+ 
+## 1. Metal Rendering Pipeline: High-Level Overview
 
 This diagram provides a simplified, top-level view of the key stages in Metal's rendering pipeline.
 
@@ -82,9 +60,12 @@ graph TD
 9. **Write to Render Target**: The output of the fragment shader is written to a render target (`MTLTexture`).
 10. **Present Drawable**: The rendered image in the `MTLTexture` (which is associated with a `CAMetalDrawable`) is presented on the display.
 
-### 2. Metal Rendering Pipeline: Detailed Resource Setup and Encoding
+## 2. Metal Rendering Pipeline: Detailed Resource Setup and Encoding
 
 This diagram dives deeper into the resource setup and encoding process within a single render pass. All of the elements to be rendered in a single frame are considered to be included in the same singular render pass.
+
+
+## TODO: Fix diagram syntax error
 
 ```mermaid
 graph TD
