@@ -186,3 +186,25 @@ classDef Performance_Optimization_More fill:#266,stroke:#333,stroke-width:2px
 
 ```
 
+---
+
+
+
+
+## State management using native property wrappers
+
+```mermaid
+graph TD
+    A[State Management <br> using built-in property wrappers] --> B[@State]
+    A --> C[@Binding]
+    A --> D[@ObservedObject]
+    A --> E[@StateObject]
+    A --> F[@EnvironmentObject]
+	
+	B --> G[Transient state within a single view.]
+	C --> H[Two-way data binding between views.]
+	D --> I[External observable data objects.]
+	E --> J[Ensures single lifecycle for observable objects.]
+	F --> K[Globally accessible data through the app's environment.]
+
+```
