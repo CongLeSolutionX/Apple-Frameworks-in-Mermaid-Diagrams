@@ -208,3 +208,48 @@ graph TD
 	F --> K[Globally accessible data through the app's environment.]
 
 ```
+
+
+---
+
+
+## State Management in SwiftUI
+
+```mermaid
+graph TD
+    A[State Management in SwiftUI] --> B{Scalability};
+    B --> BA["Complex view hierarchies"];
+	B --> BB["Handling Large-Scale Apps"];
+    
+    A --> C{Performance}
+    C --> CA["Minimizing State Updates"];
+    C --> CB["Preventing Redundant View Updates"];
+        
+    A --> D{Testing}
+    D --> DA["Unit Testing"];
+    D --> DB["UI Testing"];
+    
+    A --> E{3rd Party Libraries}
+    E --> EA["Integration with Redux or ReSwift"];
+        
+    A --> F{State Restoration}
+    F --> FA["Preserve and restore app state across sessions"];
+    
+    A --> G{Edge Cases}
+    G --> GA["Deeply Nested Bindings"];
+    G --> GB["Multiple ObservableObject Instances"];
+    G --> GC["Concurrency Issues"];
+    
+    A --> H{Best Practices and Patterns}
+	H --> HA["Adhering to Apple's Guidelines"];
+    H --> HB["Community Best Practices"];
+
+    A --> I{Integration with other iOS Technologies}
+    I --> IA["CoreData"];
+    I --> IB["URLSession"];
+    I --> IC["Combine"];
+    I --> ID["Swift Concurrency"];
+
+```
+
+---
