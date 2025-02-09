@@ -1,9 +1,16 @@
 # Apple-Frameworks-in-Mermaid-Diagrams
 
-![GitHub stars](https://img.shields.io/github/stars/CongLeSolutionX/Apple-Frameworks-in-Mermaid-Diagrams)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY)
+
+---
+Copyright (c) 2025 Cong Le. All Rights Reserved.
+
+---
+
+<!-- ![GitHub stars](https://img.shields.io/github/stars/CongLeSolutionX/Apple-Frameworks-in-Mermaid-Diagrams)
 ![GitHub forks](https://img.shields.io/github/forks/CongLeSolutionXApple-Frameworks-in-Mermaid-Diagrams)
 ![GitHub issues](https://img.shields.io/github/issues/CongLeSolutionX/Apple-Frameworks-in-Mermaid-Diagrams)
-![License](https://img.shields.io/github/license/CongLeSolutionX/Apple-Frameworks-in-Mermaid-Diagrams)
+![License](https://img.shields.io/github/license/CongLeSolutionX/Apple-Frameworks-in-Mermaid-Diagrams) -->
 
 ## Table of Contents
 
@@ -241,7 +248,7 @@ This project is licensed under the [MIT License](LICENSE), which allows you to u
 This software is licensed under the [MIT License](LICENSE). You may use, copy, modify, merge, publish, distribute, and sublicense it, provided that you include the original license in all copies or substantial portions of the software.
 
 ### Documentation License
-The documentation and other creative materials for this project are licensed under the [Creative Commons Attribution 4.0 International License](LICENSE-docs). You are free to share, adapt, and use the documentation, as long as you give appropriate credit to the original authors.
+The documentation and other creative materials for this project are licensed under the [Creative Commons Attribution 4.0 International License](LICENSE-CC-BY). You are free to share, adapt, and use the documentation, as long as you give appropriate credit to the original authors.
 
 
 ## Contact
