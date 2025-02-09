@@ -503,4 +503,11 @@ graph LR
 
 The `NSIndexPath` class is a fundamental component in iOS development, particularly when working with `UITableView` and `UICollectionView`. Understanding its structure, methods, and integrations is essential for efficient and effective UI development. The diagrams provided offer a visual representation of `NSIndexPath`'s functionalities, aiding in better comprehension and utilization within your projects.
 
+
+---
+**Licenses:**
+
+- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+
 ---

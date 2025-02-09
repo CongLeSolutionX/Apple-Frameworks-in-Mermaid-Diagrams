@@ -629,4 +629,11 @@ graph LR
 9. **Modular Design**: Structure your code to take advantage of `Accelerate`’s modular architecture for better scalability and maintainability.
 10. **Documentation and Community Resources**: Consult Apple's official documentation and community resources for best practices and advanced usage scenarios.
 
+
+---
+**Licenses:**
+
+- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+
 ---

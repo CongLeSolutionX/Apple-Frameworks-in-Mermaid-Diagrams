@@ -1055,4 +1055,10 @@ flowchart TD
 
 The above set of Mermaid diagrams provides a detailed and structured overview of the `Metal` framework, encompassing its core classes, initialization methods, properties, methods, enumerations, protocol conformances, relationships with other classes, extensions, lifecycle, feature availability, data handling, integration with drawing contexts, best practices, advanced topics, error handling, security, community resources, performance optimization, cross-platform considerations, and future directions. These diagrams serve as a comprehensive guide to understanding and effectively utilizing the `Metal` framework in your projects.
 
-Feel free to customize and expand upon these diagrams based on specific project requirements or areas of interest!
+---
+**Licenses:**
+
+- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+
+---
