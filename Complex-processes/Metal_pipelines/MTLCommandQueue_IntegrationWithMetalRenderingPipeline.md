@@ -4,6 +4,7 @@ url: https://developer.apple.com/documentation/metal/mtlcommandqueue
 author: Cong Le
 version: "2.0"
 license(s): MIT, CC BY 4.0
+copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 # MTLCommandQueue - Integration With Metal Rendering Pipeline
