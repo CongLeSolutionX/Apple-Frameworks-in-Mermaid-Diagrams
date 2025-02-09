@@ -294,4 +294,11 @@ class D,E,F,G,H,I overlappingOperations
 
 These diagrams provide a solid foundation for understanding CUDA compute pipelines, covering memory management, kernel execution, thread organization, and asynchronous operations using streams. The parallels with the Metal rendering pipeline discussion should be clear, as both involve managing resources on a GPU, encoding commands (compute kernels vs. rendering commands), and executing them in a structured manner on the device.
 
+
+---
+**Licenses:**
+
+- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+
 ---

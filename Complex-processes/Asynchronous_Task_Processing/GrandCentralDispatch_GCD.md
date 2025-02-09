@@ -252,4 +252,11 @@ graph TD
 
 These diagrams provide a comprehensive overview of Grand Central Dispatch, covering its key components, mechanisms, and usage patterns. By relating these concepts back to the Metal rendering pipeline, we can see how GCD, despite operating at a higher level of abstraction, shares fundamental principles of asynchronous processing with lower-level graphics APIs. This understanding helps solidify your grasp of concurrency and task management in iOS development.
 
+
+---
+**Licenses:**
+
+- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+
 ---

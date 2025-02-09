@@ -187,4 +187,11 @@ graph TD
 
 These diagrams provide a comprehensive overview of the rendering pipelines in Unity (URP and HDRP) and Unreal Engine, emphasizing their unique features such as batching and deferred shading. The diagrams are designed to be informative while avoiding unnecessary duplication, offering a clear understanding of these game engines' rendering processes.
 
+
+---
+**Licenses:**
+
+- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+
 ---

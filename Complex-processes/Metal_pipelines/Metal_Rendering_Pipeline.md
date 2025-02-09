@@ -320,4 +320,11 @@ sequenceDiagram
 
 These optimized diagrams provide a clear and comprehensive understanding of Metal's rendering pipeline, covering high-level flow, detailed resource setup, GPU stages, and synchronization mechanisms. They are designed to be informative and easy to understand, focusing on the unique aspects of each stage without unnecessary repetition.
 
+
+---
+**Licenses:**
+
+- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+
 ---

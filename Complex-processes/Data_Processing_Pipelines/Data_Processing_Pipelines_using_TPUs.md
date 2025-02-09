@@ -227,4 +227,11 @@ graph TD
 
 These diagrams illustrate the key features of TPU data processing pipelines: massive parallelism through sharding and multiple cores, specialized hardware for matrix operations, efficient data movement, and a staged processing approach. The structure and flow have similarities to the Metal rendering pipeline (command queue, encoders, resource binding, execution stages) but are optimized for the specific needs of machine learning workloads.
 
+
+---
+**Licenses:**
+
+- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+
 ---

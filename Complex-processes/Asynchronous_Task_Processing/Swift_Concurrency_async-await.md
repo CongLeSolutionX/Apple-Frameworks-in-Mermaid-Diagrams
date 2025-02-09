@@ -175,5 +175,11 @@ These diagrams provide a comprehensive overview of Swift Concurrency's key featu
 *   **Task Hierarchy:** Structured concurrency with its parent-child task relationships is analogous to how a complex rendering scene might be broken down into smaller, manageable sub-tasks or render passes.
 *   **Error Handling and Cancellation:** Just as a rendering pipeline needs to handle errors (e.g., invalid shader code) and potentially be aborted, Swift Concurrency provides mechanisms for error propagation and graceful cancellation of tasks.
 
----
 
+---
+**Licenses:**
+
+- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+
+---

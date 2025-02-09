@@ -301,4 +301,12 @@ graph TD
 
 These diagrams provide a comprehensive overview of the Vulkan, DirectX 12, and OpenGL graphics pipelines, highlighting their unique features and terminology while implicitly drawing comparisons to the Metal pipeline discussed earlier. I've avoided redundancy by focusing on the distinct aspects of each API. Remember that these are simplified representations, but they capture the essential concepts and workflows.
 
+
+
+---
+**Licenses:**
+
+- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+
 ---

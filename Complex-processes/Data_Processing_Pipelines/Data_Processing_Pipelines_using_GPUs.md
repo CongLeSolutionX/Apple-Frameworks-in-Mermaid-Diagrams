@@ -293,4 +293,11 @@ graph TD
 
 These diagrams provide a comprehensive overview of GPU-accelerated data processing pipelines, covering various aspects from basic data flow to advanced synchronization and pipelining techniques. They also highlight the specific implementation considerations when using Metal on iOS devices.
 
+
+---
+**Licenses:**
+
+- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+
 ---
