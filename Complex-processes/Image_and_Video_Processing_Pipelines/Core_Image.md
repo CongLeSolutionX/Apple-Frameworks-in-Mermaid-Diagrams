@@ -7,10 +7,12 @@ license(s): MIT, CC BY 4.0
 copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
+# Core Image Processing Pipelines - Image and Video Processing Pipelines
+> This content is dual-licensed under your choice of the following licenses:
+> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
+> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
 
 ---
-
-# Core Image Processing Pipelines - Image and Video Processing Pipelines
 
 Here's the set of Mermaid diagrams for Core Image, categorized for clarity, and removing any redundant information while highlighting unique details
 

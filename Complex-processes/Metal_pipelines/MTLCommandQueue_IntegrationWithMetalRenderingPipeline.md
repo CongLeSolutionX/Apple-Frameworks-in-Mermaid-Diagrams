@@ -8,6 +8,11 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 # MTLCommandQueue - Integration With Metal Rendering Pipeline
+> This content is dual-licensed under your choice of the following licenses:
+> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
+> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+
+---
 
 The mermaid diagrams below provide a clear and comprehensive understanding of how `MTLCommandQueue` integrates into the Metal rendering pipeline, covering various levels of detail and focusing on unique aspects of the process.
 

@@ -9,6 +9,12 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 # Vulkan Graphics Pipeline
+> This content is dual-licensed under your choice of the following licenses:
+> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
+> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+
+---
+
 Below is a set of Mermaid diagrams for Vulkan, DirectX, and OpenGL, focusing on their graphics pipelines.
 
 ## 1. Vulkan Graphics Pipeline

@@ -9,6 +9,11 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 # UITableViewDiffableDataSource
+> This content is dual-licensed under your choice of the following licenses:
+> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
+> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+
+---
 
 
 Below is a comprehensive and organized set of Mermaid diagrams for the `UITableViewDiffableDataSource` class. These diagrams cover various aspects of the `UITableViewDiffableDataSource`, including its class structure, initialization methods, properties, methods, enumerations, protocol conformances, relationships with other classes, extensions, lifecycle, feature availability, data handling, integration with UITableView, and best practices.

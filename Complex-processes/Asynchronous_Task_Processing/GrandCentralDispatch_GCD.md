@@ -9,6 +9,11 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 # Grand Central Dispatch (GCD) Diagrams
+> This content is dual-licensed under your choice of the following licenses:
+> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
+> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+
+---
 
 Here are the Mermaid diagrams illustrating GCD's concepts and mechanisms, organized into categories:
 

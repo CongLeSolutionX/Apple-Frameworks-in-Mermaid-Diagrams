@@ -7,10 +7,6 @@ license(s): MIT, CC BY 4.0
 copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
-
-
----
-
 # CoreData
 
 Below is a comprehensive and organized set of Mermaid diagrams for the `CoreData` framework. These diagrams cover various aspects of Core Data, including class structures, initializers, properties, methods, enumerations, protocol conformances, relationships, extensions, lifecycle, feature availability, data handling, integrations, and best practices.

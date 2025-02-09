@@ -8,6 +8,11 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 # SceneKit
+> This content is dual-licensed under your choice of the following licenses:
+> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
+> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+
+---
 
 Below is a comprehensive and organized set of Mermaid diagrams for the **Scene Kit** framework. These diagrams are structured to capture the key components, relationships, and functionalities of Scene Kit. Each section includes a purpose, diagram type, contents, and the corresponding Mermaid code.
 

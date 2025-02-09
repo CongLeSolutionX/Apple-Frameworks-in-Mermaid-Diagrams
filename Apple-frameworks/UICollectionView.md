@@ -9,6 +9,11 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 # UICollectionView
+> This content is dual-licensed under your choice of the following licenses:
+> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
+> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+
+---
 
 Below is a comprehensive and organized set of Mermaid diagrams for the `UICollectionView` framework. These diagrams cover various aspects of `UICollectionView`, including its class hierarchy, initializers, properties, methods, enumerations, protocol conformances, relationships with other classes, extensions, lifecycle, feature availability, data handling, integration with drawing contexts, and best practices.
 

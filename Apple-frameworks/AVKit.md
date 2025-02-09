@@ -7,6 +7,12 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 # AVKit
+> This content is dual-licensed under your choice of the following licenses:
+> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
+> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+
+---
+
 Below is a comprehensive and organized set of Mermaid diagrams for the `AVKit` framework. This guide covers various aspects of `AVKit`, including class structures, initializers, properties, methods, enumerations, protocols, relationships, extensions, lifecycle, feature availability, data handling, integration, and best practices.
 
 ---

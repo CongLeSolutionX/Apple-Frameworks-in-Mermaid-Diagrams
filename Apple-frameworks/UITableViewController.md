@@ -8,6 +8,11 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 # UITableViewController
+> This content is dual-licensed under your choice of the following licenses:
+> 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
+> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+
+---
 
 
 Below is a comprehensive and organized set of Mermaid diagrams for the `UITableViewController` class. These diagrams will cover various aspects of `UITableViewController`, including its class hierarchy, initialization methods, properties, methods, protocol conformances, relationships with other classes, extensions, lifecycle, use cases, feature availability, data handling, integrations, and best practices.
