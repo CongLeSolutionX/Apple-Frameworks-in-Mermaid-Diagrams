@@ -1,6 +1,5 @@
 ---
 created: 2024-12-07 04:58:55
-url:
 author(s): Cong Le
 version: "1.0"
 license(s): MIT, CC BY 4.0
