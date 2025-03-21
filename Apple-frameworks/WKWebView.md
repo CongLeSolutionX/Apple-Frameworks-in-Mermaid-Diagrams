@@ -330,11 +330,10 @@ version: "1.0"
 license(s): "MIT, CC BY 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
-  layout: elk
   look: handDrawn
   theme: dark
 ---
-%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Note: use Mermaid version v11.4.1-b.14 to use option `layout: elk`
 %%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
 %%%%%%%% Available curve styles include the following keywords:
 %% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
