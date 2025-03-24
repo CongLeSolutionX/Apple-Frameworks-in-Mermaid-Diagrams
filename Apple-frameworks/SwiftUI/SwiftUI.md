@@ -19,6 +19,7 @@ Below is a comprehensive and organized set of Mermaid diagrams for the `SwiftUI`
 
 ---
 
+
 ## **1. Class Structure and Hierarchy**
 
 ### **a. Core Class Diagram**
@@ -31,6 +32,35 @@ Below is a comprehensive and organized set of Mermaid diagrams for the `SwiftUI`
   - **Enumerations**: Nested enums such as `Alignment`, `Animation`, `ColorScheme`
 
 ```mermaid
+---
+title: "SwiftUI Framework - Class Structure and Hierarchy - Core Class Diagram"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'classDiagram': { 'htmlLabels': false, 'curve': 'linear' },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#2ff9',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 classDiagram
     %% Core Protocols
     class View {
@@ -151,6 +181,35 @@ classDiagram
   - **List Initializers**: `init(data:rowContent:)`, `init(selection:rowContent:)`
 
 ```mermaid
+---
+title: "SwiftUI Framework - Initialization Methods Diagram"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'graph': { 'htmlLabels': false, 'curve': 'linear' },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#55ff',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 graph LR
     A[SwiftUI Initializers] --> B[Text]
     A --> C[Image]
@@ -190,6 +249,33 @@ graph LR
   - **List Properties**: `data`, `selection`
 
 ```mermaid
+---
+title: "SwiftUI Framework - Key Properties Diagram"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'classDiagram': { 'htmlLabels': true },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'primaryColor': '#B528',
+      'primaryTextColor': '#2cf',
+      'primaryBorderColor': '#7C33',
+      'lineColor': '#F8B229'
+    }
+  }
+}%%
 classDiagram
     %% Text Properties
     class Text {
@@ -261,6 +347,30 @@ classDiagram
   - **Accessibility Modifiers**: `accessibilityLabel()`, `accessibilityHidden()`
 
 ```mermaid
+---
+title: "SwiftUI Framework - View Modifier Methods"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: default
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': {'htmlLabels': true, 'curve': 'basis' },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'lineColor': '#F8B229'
+    }
+  }
+}%%
 flowchart TD
     A[SwiftUI View Modifiers] --> B[Layout Modifiers]
     A --> C[Style Modifiers]
@@ -303,6 +413,35 @@ flowchart TD
   - **ColorScheme**
 
 ```mermaid
+---
+title: "SwiftUI Framework - Enumerations Diagram"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'classDiagram': { 'htmlLabels': false, 'curve': 'linear' },
+    'fontFamily': 'Comic Sans MS',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#2ff9',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 classDiagram
     class Alignment {
         <<enum>>
@@ -366,6 +505,35 @@ classDiagram
   - **Binding**
 
 ```mermaid
+---
+title: "SwiftUI Framework - Configuration Classes Diagram"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'classDiagram': { 'htmlLabels': false, 'curve': 'linear' },
+    'fontFamily': 'Comic Sans MS',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#2ff9',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 classDiagram
     class View {
         +body: some View
@@ -408,6 +576,35 @@ classDiagram
   - **ObservableObject**
 
 ```mermaid
+---
+title: "SwiftUI Framework - Protocols Diagram"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'classDiagram': { 'htmlLabels': false, 'curve': 'linear' },
+    'fontFamily': 'Comic Sans MS',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#2ff9',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 classDiagram
     class View {
         <<protocol>>
@@ -472,6 +669,30 @@ classDiagram
   - **Accessibility**: VoiceOver, Dynamic Type
 
 ```mermaid
+---
+title: "SwiftUI Framework - Related Classes Diagram"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': {'htmlLabels': true, 'curve': 'basis' },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'lineColor': '#F8B229'
+    }
+  }
+}%%
 flowchart TD
     A[SwiftUI] --> B[Combine Framework]
     A --> C[UIKit Integration]
@@ -509,7 +730,37 @@ flowchart TD
   - **Animation Extensions**: Additional animation options
 
 ```mermaid
+---
+title: "SwiftUI Framework - SwiftUI Extensions Diagram"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'classDiagram': { 'htmlLabels': false, 'curve': 'linear' },
+    'fontFamily': 'Comic Sans MS',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#2ff9',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 classDiagram
+
     class View {
         <<protocol>>
         +body: some View
@@ -554,7 +805,36 @@ classDiagram
   - **Custom Animations**
 
 ```mermaid
-flowchart LR
+---
+title: "SwiftUI Framework - Extensions Functionalities Flowchart"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': {'htmlLabels': true, 'curve': 'basis' },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#2ff9',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
+flowchart TD
     A[SwiftUI Extensions] --> B[Custom Modifiers]
     A --> C[Custom Colors]
     A --> D[Custom Fonts]
@@ -587,6 +867,35 @@ flowchart LR
   - **Disposal**
 
 ```mermaid
+---
+title: "SwiftUI Framework - Lifecycle Flowchart"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': {'htmlLabels': true, 'curve': 'basis' },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#2ff9',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 flowchart TD
     Start[Start] --> Init[Initialize SwiftUI View]
     Init --> Config[Configure View Modifiers]
@@ -611,6 +920,35 @@ flowchart TD
   - **Integration with APIs and Services**
 
 ```mermaid
+---
+title: "SwiftUI Framework - Common Use Cases Diagram"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': {'htmlLabels': true, 'curve': 'basis' },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#2ff9',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 flowchart TD
     A[SwiftUI Use Cases] --> B[Building User Interfaces]
     A --> C[Handling User Input]
@@ -650,6 +988,35 @@ flowchart TD
   - **Features Introduced**: Basic Views, Dark Mode Support, AsyncImage, Asynchronous Programming, Improved Navigation APIs, Advanced Animation Techniques
 
 ```mermaid
+---
+title: "SwiftUI Framework - Feature Availability "
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'gantt': {'htmlLabels': false },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#2ff9',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 gantt
     dateFormat  YYYY-MM-DD
     title SwiftUI Feature Availability
@@ -692,6 +1059,35 @@ gantt
   - **@Published**
 
 ```mermaid
+---
+title: "SwiftUI Framework - Data Binding and State Management Diagram"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'graph': { 'htmlLabels': false, 'curve': 'linear' },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#55ff',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 graph LR
     A[SwiftUI Data Handling] --> B[@State]
     A --> C[@Binding]
@@ -723,6 +1119,35 @@ graph LR
   - **Integrating with UIKit**
 
 ```mermaid
+---
+title: "SwiftUI Framework - Drawing Methods Usage Diagram"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Toggle theme value to `base` to activate the initilization below for the customized theme version.
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': {'htmlLabels': true, 'curve': 'basis' },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'primaryColor': '#ffff',
+      'primaryTextColor': '#2ff9',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 flowchart TD
     A[SwiftUI Drawing] --> B[Custom Shapes]
     A --> C[Drawing Paths]
@@ -753,6 +1178,30 @@ flowchart TD
   - **Performance Optimizations**
 
 ```mermaid
+---
+title: "SwiftUI Framework - Summary Diagram"
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'graph': { 'htmlLabels': false, 'curve': 'linear' },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'primaryColor': '#BB2528',
+      'primaryTextColor': '#f529',
+      'primaryBorderColor': '#7C0000',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 graph LR
     A[SwiftUI] --> B[Declarative Syntax]
     A --> C[State-Driven UI Updates]
@@ -783,6 +1232,30 @@ graph LR
   - **Test Thoroughly**
 
 ```mermaid
+---
+title: "SwiftUI Framework - Best Practices Diagram"
+config:
+  layout: elk
+  look: handDrawn
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
+    'fontFamily': 'Fantasy',
+    'themeVariables': {
+      'primaryColor': '#BB28',
+      'primaryTextColor': '#299',
+      'primaryBorderColor': '#7c2',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
 flowchart TD
     A[SwiftUI Best Practices] --> B[Use State Appropriately]
     A --> C[Leverage Composability]
