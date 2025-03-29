@@ -1,5 +1,5 @@
 ---
-created: 2025-03-19 05:31:26
+created: 2025-03-28 05:31:26
 author: Cong Le
 version: "1.0"
 license(s): MIT, CC BY 4.0
@@ -8,7 +8,7 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 
-# CHANGE_ME
+# CHANGE_ME - A Diagrammatic Guide 
 > **Disclaimer:**
 >
 > This document contains my personal notes on the topic,
@@ -20,7 +20,6 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 
-## - A Diagrammatic Guide 
 
 ---
 **Licenses:**
